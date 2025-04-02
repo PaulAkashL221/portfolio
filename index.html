@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paul Akash - Portfolio</title>
+    <style>
+        /* Modern Tamil-style CSS */
+        body {
+            font-family: 'Segoe UI', 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            background: #2c3e50;
+            color: white;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        }
+        
+        .logo {
+            font-weight: bold;
+            font-size: 1.3rem;
+            color: #f1c40f;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 1.8rem;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+            font-weight: 500;
+        }
+        
+        nav a:hover {
+            color: #f1c40f;
+        }
+        
+        section {
+            padding: 4rem 5%;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 5rem 1rem;
+            background: linear-gradient(135deg, #3498db, #2c3e50);
+            color: white;
+        }
+        
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 6px solid #f1c40f;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        }
+        
+        .highlight {
+            color: #f1c40f;
+            font-weight: bold;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 0.7rem 1.5rem;
+            background: #f1c40f;
+            color: #2c3e50;
+            text-decoration: none;
+            border-radius: 30px;
+            margin-top: 1.5rem;
+            font-weight: bold;
+            transition: all 0.3s;
+            border: 2px solid #f1c40f;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(241, 196, 15, 0.3);
+            background: transparent;
+            color: #f1c40f;
+        }
+        
+        .education, .skills {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+            margin-bottom: 2.5rem;
+            padding: 2rem;
+        }
+        
+        .education-item {
+            padding: 1.5rem;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .education-item:last-child {
+            border-bottom: none;
+        }
+        
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        .skill {
+            background: #e8f4fc;
+            padding: 0.6rem 1.2rem;
+            border-radius: 30px;
+            font-size: 0.95rem;
+            color: #2c3e50;
+            font-weight: 500;
+        }
+        
+        .contact-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.2rem;
+        }
+        
+        .contact-icon {
+            width: 40px;
+            height: 40px;
+            background: #f1c40f;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            color: #2c3e50;
+            font-size: 1.1rem;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #2c3e50;
+            color: white;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                gap: 1rem;
+            }
+            
+            .profile-img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">PAUL AKASH</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section with Image -->
+    <section id="home" class="hero">
+        <!-- Replace "paul-photo.jpg" with your image file -->
+        <img class="profile-img" src="akash.jpg" alt="Paul Akash">
+        <h1>Hi, I'm <span class="highlight">Paul Akash</span></h1>
+        <p>2nd Year B.Sc Computer Science Student | Aspiring Developer</p>
+        <a href="#contact" class="btn">Get In Touch</a>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <div class="education">
+            <h2>📚 Education</h2>
+            <div class="education-item">
+                <h3>Dr. Ambedkar Government Arts College</h3>
+                <p><strong>B.Sc Computer Science (2nd Year)</strong></p>
+                <p>Vyasarpadi, Chennai - 600039</p>
+                <p>2023 - Present</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="skills">
+            <h2>💻 Technical Skills</h2>
+            <div class="skills-container">
+                <span class="skill">HTML5</span>
+                <span class="skill">CSS3</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">C Programming</span>
+                <span class="skill">Python Basics</span>
+                <span class="skill">MS Office</span>
+                <span class="skill">Problem Solving</span>
+                <span class="skill">Web Design</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="contact-card">
+            <h2>📞 Contact Me</h2>
+            <div class="contact-item">
+                <div class="contact-icon">📱</div>
+                <div>
+                    <h3>Phone</h3>
+                    <p><a href="tel:+919361738326">+91 93617 38326</a></p>
+                </div>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon">✉</div>
+                <div>
+                    <h3>Email</h3>
+                    <p><a href="mailto:paulakash23082006@gmail.com">paulakash23082006@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon">🏫</div>
+                <div>
+                    <h3>College</h3>
+                    <p>Dr. Ambedkar Govt Arts College, Vyasarpadi, Chennai-39</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Paul Akash | Made with ❤ for my career</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
